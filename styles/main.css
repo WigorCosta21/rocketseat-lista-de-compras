@@ -1,0 +1,15 @@
+main {
+    margin-top: 4rem;
+
+    & a {
+        font: 500 var(--fs-link)/1rem var(--ff);
+        text-decoration: none;
+        color: var(--color-brand);
+    }
+
+    & h1 {
+        font: 700 var(--fs-title)/1.5rem var(--ff);
+        color: var(--content-primary);
+        margin-top: 1rem;
+    }
+}

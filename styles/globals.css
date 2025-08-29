@@ -20,7 +20,7 @@
     --border-primary: #d1d5db;
     --border-hover: #b9c2d0;
 
-    ---ff: "Inter", sans-serif;
+    --ff: "Inter", sans-serif;
 
     --fs-title: 1.5rem;
     --fs-label: 1rem;
@@ -29,7 +29,7 @@
 }
 
 body {
-    font-family: var(---ff);
+    font-family: var(--ff);
     background-color: var(--background-primary);
 }
 
