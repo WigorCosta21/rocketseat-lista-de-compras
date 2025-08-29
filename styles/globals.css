@@ -27,3 +27,13 @@
     --fs-paragraph: 1rem;
     --fs-link: 0.875rem;
 }
+
+body {
+    font-family: var(---ff);
+    background-color: var(--background-primary);
+}
+
+.container {
+    max-width: 39.25rem;
+    margin: 0 auto;
+}
