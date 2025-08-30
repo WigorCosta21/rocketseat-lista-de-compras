@@ -30,8 +30,43 @@
         <form id="form">
             <input type="text" placeholder="Adicione um novo item" id="task" name="task">
 
-            <button id="btn">Adicionar item</button>
+            <button class="btn-add">Adicionar item</button>
         </form>
+
+        <ul role="list" class="list">
+            <li class="list-content">
+                <div class="checkbox-wrapper">
+                    <div class="checkbox-image"></div>
+                    <input type="checkbox" id="check-task" name="check-task">
+                    <span>Pão de forma</span>
+                </div>
+
+                <button class="btn-delete">
+                    <img src="assets/icons/trash.svg" alt="">
+                </button>
+            </li>
+
+            <li class="list-content">
+                <div class="checkbox-wrapper">
+                    <div class="checkbox-image"></div>
+                    <input type="checkbox" id="check-task" name="check-task">
+                    <span>Pão de forma</span>
+                </div>
+
+                <button class="btn-delete">
+                    <img src="assets/icons/trash.svg" alt="">
+                </button>
+            </li>
+        </ul>
+
+        <div class="alert">
+            <div class="alert-message">
+                <img src="assets/icons/warning.svg" alt="">
+                <p>O item foi removido da lista</p>
+            </div>
+
+            <img src="assets/icons/delete-small.svg" alt="">
+        </div>
     </main>
 
 </body>
