@@ -8,7 +8,7 @@
     font: 600 var(--fs-label)/2rem var(--ff);
     border: 2px solid var(--border-primary);
     border-radius: 0.75rem;
-    padding: 0 1.125rem;
+    padding: 0.625rem 1.125rem;
     flex: 1;
     color: var(--content-primary);
     background-color: var(--background-secondary);
@@ -43,4 +43,10 @@
 
 .btn-add:hover {
     background-color: var(--color-brand-hover);
+}
+
+@media (max-width: 768px) {
+    #form {
+        flex-direction: column;
+    }
 }

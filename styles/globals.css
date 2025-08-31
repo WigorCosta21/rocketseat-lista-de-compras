@@ -37,3 +37,9 @@ body {
     max-width: 39.25rem;
     margin: 0 auto;
 }
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1.25rem;
+    }
+}
