@@ -3,6 +3,7 @@ const task = document.querySelector("#task")
 const btnAdd = document.querySelector(".btn-add")
 const inputChecked = document.querySelector("#check-task")
 const list = document.querySelector(".list")
+const alert = document.querySelector(".alert")
 
 form.onsubmit = (event) => {
     event.preventDefault()
@@ -50,12 +51,51 @@ const addTask = () => {
         newImg.src = "../assets/icons/trash.svg"
         newBtnDelete.appendChild(newImg)
 
+        task.value = ""
+
 
     } catch (error) {
         console.log(error)
     }
 }
 
+const showAlert = () => {
+    alert.style.display = "flex"
+
+    setTimeout(() => {
+        hideAlert()
+    }, 1500)
+}
+
+const hideAlert = () => {
+    alert.style.display = "none"
+}
+const removeTask = (taskElement) => {
+    try {
+
+        taskElement.remove()
+
+        showAlert()
+
+    } catch (error) {
+        console.log("Erro ao remover tarefa.", error)
+    }
+}
+
 btnAdd.addEventListener("click", () => {
     addTask()
+})
+
+list.addEventListener("click", (event) => {
+
+    const deleteButton = event.target.closest(".btn-delete")
+
+    if (deleteButton) {
+        const taskItem = deleteButton.closest(".list-content")
+
+        if (taskItem) {
+            removeTask(taskItem)
+        }
+    }
+
 })
